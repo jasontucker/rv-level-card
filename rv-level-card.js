@@ -15,7 +15,7 @@
  * connection_entity: switch.xxx_bluetooth_connection   (optional)
  * title, mode (ball|bubble), max_inches (default 6), level_tolerance (default 0.5)
  */
-const VERSION = "0.5.0";
+const VERSION = "0.5.1";
 
 class RvLevelCard extends HTMLElement {
   setConfig(config) {
