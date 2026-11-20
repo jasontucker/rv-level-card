@@ -1,7 +1,8 @@
 /*
  * rv-level-card: top-down Class C motorhome with a level ball.
  *
- * Reads the LevelMate Pro integration's raw axis sensors (inches):
+ * Reads the raw axis sensors from the LevelMate Pro integration by timsys512
+ * (https://github.com/timsys512/home-assistant-levelmate), in inches:
  *   front: < 0 = front HIGH,  > 0 = front LOW
  *   side:  > 0 = passenger LOW (driver high), < 0 = driver LOW
  * mode "ball" (default): ball rolls DOWNHILL toward the low side.

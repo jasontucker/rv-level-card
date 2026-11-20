@@ -9,6 +9,13 @@ Built for the LogicBlue **LevelMatePRO / LevelMatePRO+** through the
 It works with any pair of sensors that report front/back and side-to-side tilt
 in inches.
 
+> **Huge thanks to [@timsys512](https://github.com/timsys512)** for
+> [home-assistant-levelmate](https://github.com/timsys512/home-assistant-levelmate).
+> They reverse-engineered the LevelMate's Bluetooth protocol and built the
+> integration that connects it to Home Assistant. This card is only the
+> display; their integration does the work. Install it first, and give the
+> repo a ⭐.
+
 ![RV Level Card in three states: not level, almost level, and showing the last reading](images/screenshot.png)
 
 ## Features
@@ -27,6 +34,10 @@ in inches.
 - Follows your Home Assistant theme, light or dark.
 
 ## Installation
+
+**Prerequisite:** install and set up
+[timsys512/home-assistant-levelmate](https://github.com/timsys512/home-assistant-levelmate)
+so your LevelMate's sensors are in Home Assistant.
 
 ### HACS (custom repository)
 
@@ -83,8 +94,11 @@ read zero on level ground.
 
 ## Credits
 
-- Bluetooth protocol and integration:
-  [timsys512/home-assistant-levelmate](https://github.com/timsys512/home-assistant-levelmate)
+- **[timsys512](https://github.com/timsys512)** reverse-engineered the
+  LevelMate Pro Bluetooth protocol from the official app and wrote
+  [home-assistant-levelmate](https://github.com/timsys512/home-assistant-levelmate).
+  The corner math, sign conventions and connection switch this card relies on
+  all come from their work. Thank you!
 - Not affiliated with LogicBlue Technology.
 
 ## License
